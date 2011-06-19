@@ -221,6 +221,8 @@ town_names(adjective) {
 	text("Pina ", 1),
 	text("Sukcena ", 1),
 	text("Lieĝa ", 1),
+	text("Agla ", 1),
+	text("Reĝa ", 1),
 	}
 }
 
@@ -240,12 +242,15 @@ town_names(names) {
 	text("Gaja ", 1),
 	text("Georga ", 1),
 	text("Glorinda ", 1),
+	text("Hana ", 1),
 	text("Johana ", 1),
+	text("Jupa ", 1),
 	text("Jozefa ", 1),
 	text("Juvela ", 1),
 	text("Kandaĵa ", 1),
 	text("Karesinda ", 1),
 	text("Katida ", 1),
+	text("Kiefta ", 1),
 	text("Korala ", 1),
 	text("Krista ", 1),
 	text("Kristofera ", 1),
@@ -276,50 +281,75 @@ town_names(names) {
 	}
 }
 
-town_names(noun) {
+town_names(suffix) {
 	{
-	text("Urbo", 1),
-	text("Urbeto", 1),
-	text("Vilaĝo", 1),
-	text("Vilaĝeto", 1),
-	text("Vilao", 1),
-	text("Rivero", 1),
-	text("Rivereto", 1),
-	text("Vojkruĉigo", 1),
-	text("Kruco", 1),
-	text("Haveno", 1),
-	text("Ponto", 1),
-	text("Eĝo", 1),
-	text("Kresto", 1),
-	text("Akvofalo", 1),
-	text("Ebenaĵo", 1),
-	text("Fruktabejo", 1),
-	text("Tendumo", 1),
-	text("Citadelo", 1),
-	text("Preĝejo", 1),
-	text("Deklivo", 1),
-	text("Monteto", 1),
-	text("Tero", 1),
-	text("Pinto", 1),
-	text("Fonto", 1),
-	text("Agro", 1),
-	text("Parko", 1),
-	text("Korto", 1),
-	text("Valo", 1),
-	text("Strando", 1),
-	text("Uzino", 1),
-	text("Muelejo", 1),
-	text("Tombejo", 1),
-	text("Forĝo",1),
-	text("Abatejo",1),
-	text("Fjordo", 1),
-	text("Panoramo",1),
-	text("Ĝardeno", 1),
-	text("Centro", 1),
+	text(" ĉe la Maro", 1),
+	text(" sub la Arboj", 1),
+	text(" sur la Agroj", 1),
+	text(" de la Tero", 1),
+	text(" de la Dioj", 1),
+	text(" ĉe la Lago", 1),
 	}
 }
 
 town_names(root) {
+	{
+	text("Urb", 1),
+	text("Urbet", 1),
+	text("Vilaĝ", 1),
+	text("Vilaĝet", 1),
+	text("Vila", 1),
+	text("River", 1),
+	text("Riveret", 1),
+	text("Vojkruĉig", 1),
+	text("Kruc", 1),
+	text("Haven", 1),
+	text("Pont", 1),
+	text("Eĝ", 1),
+	text("Krest", 1),
+	text("Akvofal", 1),
+	text("Ebenaĵ", 1),
+	text("Fruktabej", 1),
+	text("Tendum", 1),
+	text("Citadel", 1),
+	text("Preĝej", 1),
+	text("Dekliv", 1),
+	text("Montet", 1),
+	text("Ter", 1),
+	text("Pint", 1),
+	text("Font", 1),
+	text("Agr", 1),
+	text("Park", 1),
+	text("Kort", 1),
+	text("Val", 1),
+	text("Strand", 1),
+	text("Uzin", 1),
+	text("Muelej", 1),
+	text("Tombej", 1),
+	text("Forĝ",1),
+	text("Abatej",1),
+	text("Fjord", 1),
+	text("Panoram",1),
+	text("Ĝarden", 1),
+	text("Centr", 1),
+	}
+}
+
+town_names(root_for_suffix) {
+	{
+	text("Diamant", 1),
+	text("Pearl", 1),
+	text("Ruben", 1),
+	text("Safir", 1),
+	text("Juvel", 1),
+	text("Smerald", 1),
+	text("Kristal", 1),
+	text("Ĝarden", 1),
+	text("Kort", 1),
+	}
+}
+	
+town_names(compound_root) {
 	{
 	text("River", 1),
 	text("Riveret", 1),
@@ -352,7 +382,7 @@ town_names(root) {
 	}
 }
 
-town_names(suffix) {
+town_names(compound_suffix) {
 	{
 	text("urbeto", 1),
 	text("vilaĝo", 1),
@@ -370,16 +400,40 @@ town_names(original) {
 	town_names(names, 1),
 	}
 	{
-	town_names(noun, 1),
+	town_names(root, 1),
+	}
+	{
+	text("o", 1),
 	}
 }
 
 town_names(compound) {
 	{
-	town_names(root, 1),
+	town_names(compound_root, 1),
+	}
+	{
+	town_names(compound_suffix, 1),
+	}
+}
+
+town_names(suffix_towns) {
+	{
+	town_names(root_for_suffix, 1),
+	}
+	{
+	text("o", 1),
 	}
 	{
 	town_names(suffix, 1),
+	}
+}
+
+town_names(original_single) {
+	{
+	town_names(root_for_suffix, 1),
+	}
+	{
+	text("o", 1),
 	}
 }
 
@@ -390,6 +444,7 @@ town_names(university_towns) {
 	{
 	text("Universitato", 1),
 	text("Kolegio", 1),
+	text("Akademio", 1),
 	}
 }
 
@@ -418,8 +473,10 @@ town_names(master) {
 	town_names(new_real_world, 1),
 	town_names(original, 28),
 	town_names(new_original, 1),
-	town_names(compound, 14),
-	town_names(university_towns, 2),
+	town_names(compound, 20),
+	town_names(university_towns, 1),
+	town_names(suffix_towns, 6),
+	town_names(original_single, 2),
 	}
 }
 	
