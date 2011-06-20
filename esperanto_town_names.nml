@@ -845,6 +845,11 @@ town_names(adjective) {
 	text("Lieĝa ", 1),
 	text("Agla ", 1),
 	text("Reĝa ", 1),
+	text("Reĝina ", 1),
+	text("Ĉevala ", 1),
+	text("Kolomba ", 1),
+	text("Flora ", 1),
+	text("Dorna ", 1),
 	}
 }
 
@@ -969,6 +974,8 @@ town_names(root) {
 	text("Kapel", 1),
 	text("Templ", 1),
 	text("Moske", 1),
+	text("Ranĉ", 1),
+	text("Koloni", 1),
 	}
 }
 
@@ -985,6 +992,9 @@ town_names(root_for_suffix) {
 	text("Kort", 1),
 	text("Kastel", 1),
 	text("Tur", 1),
+	text("Pomuj", 1),
+	text("Piruj", 1),
+	text("Flor", 1),
 	}
 }
 	
@@ -1023,6 +1033,15 @@ town_names(compound_root) {
 	text("Kverk", 1),
 	text("Acer", 1),
 	text("Pin", 1),
+	text("Ĉeval", 1),
+	text("Kolomb", 1),
+	text("Pom", 1),
+	text("Pir", 1),
+	text("Flor", 1),
+	text("Lum", 1),
+	text("Ŝton", 1),
+	text("Abust", 1),
+	text("Dorn", 1),
 	}
 }
 
@@ -1241,7 +1260,7 @@ town_names(new_original) {
 	}
 }
 
-town_names(saint_towns_1_2) {
+town_names(saint_towns) {
 	{
 	town_names(saint_towns_1, 6),
 	town_names(saint_towns_2, 10),
@@ -1255,11 +1274,11 @@ town_names(master) {
 	town_names(new_real_world, 1),
 	town_names(original, 28),
 	town_names(new_original, 1),
-	town_names(compound, 20),
+	town_names(compound, 22),
 	town_names(university_towns, 1),
-	town_names(suffix_towns, 10),
-	town_names(original_single, 3),
-	town_names(saint_towns_1_2, 8),
+	town_names(suffix_towns, 15),
+	town_names(original_single, 12),
+	town_names(saint_towns, 8),
 	}
 }
 	
