@@ -229,6 +229,8 @@ town_names(adjective) {
 town_names(names) {
 	{
 	text("Zamenhofa ", 1),
+	text("Alekĉja ", 1),
+	text("Aleksa ", 1),
 	text("Aleksandra ", 1),
 	text("Amika ", 1),
 	text("Aminda ", 1),
@@ -244,13 +246,13 @@ town_names(names) {
 	text("Glorinda ", 1),
 	text("Hana ", 1),
 	text("Johana ", 1),
-	text("Jupa ", 1),
+	text("Joŭpa ", 1),
 	text("Jozefa ", 1),
 	text("Juvela ", 1),
 	text("Kandaĵa ", 1),
 	text("Karesinda ", 1),
 	text("Katida ", 1),
-	text("Kiefta ", 1),
+	text("Kifta ", 1),
 	text("Korala ", 1),
 	text("Krista ", 1),
 	text("Kristofera ", 1),
@@ -267,6 +269,7 @@ town_names(names) {
 	text("Petra ", 1),
 	text("Pipra ", 1),
 	text("Rava ", 1),
+	text("Rajmonda", 1),
 	text("Rozabela ", 1),
 	text("Rubena ", 1),
 	text("Safira ", 1),
@@ -283,12 +286,18 @@ town_names(names) {
 
 town_names(suffix) {
 	{
-	text(" ĉe la Maro", 1),
-	text(" sub la Arboj", 1),
-	text(" sur la Agroj", 1),
-	text(" de la Tero", 1),
-	text(" de la Dioj", 1),
-	text(" ĉe la Lago", 1),
+	text(" ĉe la maro", 1),
+	text(" sub la arboj", 1),
+	text(" sur la agroj", 1),
+	text(" de la tero", 1),
+	text(" de la dioj", 1),
+	text(" ĉe la lago", 1),
+	text(" inter la arbaroj", 1),
+	text(" sur la montoj", 1),
+	text(" sub la stelaro", 1),
+	text(" meze de la mondo", 1),
+	text(" de la bonaĵoj", 1),
+	text(" laŭ la fundamento", 1),
 	}
 }
 
@@ -332,13 +341,19 @@ town_names(root) {
 	text("Panoram",1),
 	text("Ĝarden", 1),
 	text("Centr", 1),
+	text("Kaskad", 1),
+	text("Imperiestr", 1),
+	text("Katedral", 1),
+	text("Kapel", 1),
+	text("Templ", 1),
+	text("Moske", 1),
 	}
 }
 
 town_names(root_for_suffix) {
 	{
 	text("Diamant", 1),
-	text("Pearl", 1),
+	text("Perl", 1),
 	text("Ruben", 1),
 	text("Safir", 1),
 	text("Juvel", 1),
@@ -346,6 +361,8 @@ town_names(root_for_suffix) {
 	text("Kristal", 1),
 	text("Ĝarden", 1),
 	text("Kort", 1),
+	text("Kastel", 1),
+	text("Tur", 1),
 	}
 }
 	
@@ -376,6 +393,11 @@ town_names(compound_root) {
 	text("Panoram",1),
 	text("Ĝarden", 1),
 	text("Centr", 1),
+	text("Kaskad", 1),
+	text("Katedral", 1),
+	text("Kapel", 1),
+	text("Templ", 1),
+	text("Moske", 1),
 	text("Kverk", 1),
 	text("Acer", 1),
 	text("Pin", 1),
@@ -384,8 +406,8 @@ town_names(compound_root) {
 
 town_names(compound_suffix) {
 	{
-	text("urbeto", 1),
-	text("vilaĝo", 1),
+	text("urbeto", 5),
+	text("vilaĝo", 5),
 	text("klifo", 1),
 	text("fjordo", 1),
 	text("agro", 1),
@@ -393,7 +415,101 @@ town_names(compound_suffix) {
 	text("arbaro", 1),
 	text("valo", 1),
 	}
-}		
+}
+
+town_names(saints) {
+	{
+	text("Aron", 1),
+	text("Abraham", 1),
+	text("Akaci", 1),
+	text("Agapit", 1),
+	text("Agath", 1),
+	text("Albert", 1),
+	text("Aleksandr", 1),
+	text("Ambros", 1),
+	text("Antoni", 1),
+	text("Avit", 1),
+	text("Basil", 1),
+	text("Benedik", 1),
+	text("Briĝet", 1),
+	text("Kasamir", 1),
+	text("Katarin", 1),
+	text("Ĉarl", 1),
+	text("Klar", 1),
+	text("Kosmo", 1),
+	text("Desideri", 1),
+	text("Dimitr", 1),
+	text("Dominik", 1),
+	text("Edmun", 1),
+	text("Elizabet", 1),
+	text("Emili", 1),
+	text("Eŭĝen", 1),
+	text("Eŭfem", 1),
+	text("Feliks", 1),
+	text("Florenti", 1),
+	text("Franco", 1),
+	text("Gabriel", 1),
+	text("Ĝenisi", 1),
+	text("Ĝiorĝ", 1),
+	text("Gilbert", 1),
+	text("Godrik", 1),
+	text("Helen", 1),
+	text("Herman", 1),
+	text("Hjacint", 1),
+	text("Ignat", 1),
+	text("Isak", 1),
+	text("Ĵoan", 1),
+	text("Johan", 1),
+	text("Jozef", 1),
+	text("Julian", 1),
+	text("Kassi", 1),
+	text("Laŭr", 1),
+	text("Le", 1),
+	text("Lorenz", 1),
+	text("Lup", 1),
+	text("Margaret", 1),
+	text("Mari", 1),
+	text("Maksim", 1),
+	text("Miĥel", 1),
+	text("Nikol", 1),
+	text("Oportun", 1),
+	text("Paŭl", 1),
+	text("Peter", 1),
+	text("Filip", 1),
+	text("Pi", 1),
+	text("Rafel", 1),
+	text("Rit", 1),
+	text("Rosali", 1),
+	text("Saloni", 1),
+	text("Serafin", 1),
+	text("Silveri", 1),
+	text("Stefan", 1),
+	text("Simon", 1),
+	text("Teres", 1),
+	text("Theodor", 1),
+	text("Tomas", 1),
+	text("Ulriĥ", 1),
+	text("Ursul", 1),
+	text("Veronik", 1),
+	text("Vicent", 1),
+	text("Vladamir", 1),
+	text("Vilhem", 1),
+	text("Zeni", 1),
+	text("Zakari", 1),
+	}
+}
+
+town_names(holy_places) {
+	{
+	text(" Kruco", 1),
+	text(" Preĝejo", 1),
+	text(" Abatejo",1),
+	text(" Katedralo", 1),
+	text(" Kapelo", 1),
+	text(" Templo", 1),
+	}
+}
+
 town_names(original) {
 	{
 	town_names(adjective, 3),
@@ -410,6 +526,7 @@ town_names(original) {
 town_names(compound) {
 	{
 	town_names(compound_root, 1),
+	town_names(root_for_suffix, 1),
 	}
 	{
 	town_names(compound_suffix, 1),
@@ -434,6 +551,33 @@ town_names(original_single) {
 	}
 	{
 	text("o", 1),
+	}
+}
+
+town_names(saint_towns_1) {
+	{
+	text("Sankt-", 1),
+	}
+	{
+	town_names(saints, 1),
+	}
+	{
+	text("o", 1),
+	}
+}
+
+town_names(saint_towns_2) {
+	{
+	text("Sankt-", 1),
+	}
+	{
+	town_names(saints, 1),
+	}
+	{
+	text("a", 1),
+	}
+	{
+	town_names(holy_places, 1),
 	}
 }
 
@@ -466,6 +610,13 @@ town_names(new_original) {
 	}
 }
 
+town_names(saint_towns_1_2) {
+	{
+	town_names(saint_towns_1, 6),
+	town_names(saint_towns_2, 10),
+	}
+}
+
 town_names(master) {
 	styles:	string(STR_GAME_OPTIONS_TOWN_NAME_RANDOM_AB);
 	{
@@ -475,8 +626,9 @@ town_names(master) {
 	town_names(new_original, 1),
 	town_names(compound, 20),
 	town_names(university_towns, 1),
-	town_names(suffix_towns, 6),
-	town_names(original_single, 2),
+	town_names(suffix_towns, 7),
+	town_names(original_single, 3),
+	town_names(saint_towns_1_2, 8),
 	}
 }
 	

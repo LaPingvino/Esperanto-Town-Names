@@ -1,2 +1,2 @@
 To make into grf type the following into the Terminal:
-nmlc -l <language file path> <nml file path/esperanto_town_namesv1.01.nml>
+nmlc -l <nml file path/esperanto_town_namesv1.01.nml>
