@@ -387,7 +387,6 @@ town_names(real_world_2) {
 	text("Ĥersono", 1),
 	text("Hiroŝimo", 1),
 	text("Ĥmelnitskijo", 1),
-	text("Ho-Ĉi-Ming-Urbo", 1),
 	text("Hongkongo", 1),
 	text("Horlivko", 1),
 	text("Hradeco", 1),
@@ -801,7 +800,7 @@ town_names (real_world_4) {
 	text("Zakopano", 1),
 	text("Zaporiĵjo", 1),
 	text("Zario", 1),
-	text("Ẑitomiro", 1),
+	text("Ĵitomiro", 1),
 	text("Zrenjanino", 1),
 	text("Zugo", 1),
 	text("Zuriko", 1),
@@ -850,6 +849,7 @@ town_names(adjective) {
 	text("Kolomba ", 1),
 	text("Flora ", 1),
 	text("Dorna ", 1),
+	text("Imperiestra ", 1),
 	}
 }
 
@@ -969,13 +969,13 @@ town_names(root) {
 	text("Ĝarden", 1),
 	text("Centr", 1),
 	text("Kaskad", 1),
-	text("Imperiestr", 1),
 	text("Katedral", 1),
 	text("Kapel", 1),
 	text("Templ", 1),
 	text("Moske", 1),
 	text("Ranĉ", 1),
 	text("Koloni", 1),
+	text("Misi", 1),
 	}
 }
 
@@ -988,6 +988,7 @@ town_names(root_for_suffix) {
 	text("Juvel", 1),
 	text("Smerald", 1),
 	text("Kristal", 1),
+	text("Opal", 1),
 	text("Ĝarden", 1),
 	text("Kort", 1),
 	text("Kastel", 1),
@@ -995,6 +996,7 @@ town_names(root_for_suffix) {
 	text("Pomuj", 1),
 	text("Piruj", 1),
 	text("Flor", 1),
+	text("", 1),
 	}
 }
 	
@@ -1096,7 +1098,7 @@ town_names(saints) {
 	text("Godrik", 1),
 	text("Helen", 1),
 	text("Herman", 1),
-	text("Hjacint", 1),
+	text("Hiacint", 1),
 	text("Ignat", 1),
 	text("Isak", 1),
 	text("Ĵoan", 1),
@@ -1152,6 +1154,11 @@ town_names(holy_places) {
 }
 
 town_names(real_world) {
+	{
+	text("", 20),
+	text("Nova ", 1),
+	text("Universitato de ", 1),
+	}
 	{
 	town_names(real_world_1, 1),
 	town_names(real_world_2, 1),
@@ -1242,15 +1249,6 @@ town_names(university_towns) {
 	}
 }
 
-town_names(new_real_world) {
-	{
-	text("Nova ", 1),
-	}
-	{
-	town_names(real_world, 1),
-	}
-}
-
 town_names(new_original) {
 	{
 	text("Nova ", 1),
@@ -1271,7 +1269,6 @@ town_names(master) {
 	styles:	string(STR_GAME_OPTIONS_TOWN_NAME_RANDOM_AB);
 	{
 	town_names(real_world, 5),
-	town_names(new_real_world, 1),
 	town_names(original, 28),
 	town_names(new_original, 1),
 	town_names(compound, 22),
