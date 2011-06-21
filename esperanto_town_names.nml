@@ -1044,7 +1044,7 @@ town_names(compound_root) {
 	text("Abatej",1),
 	text("Panoram",1),
 	text("Ĝarden", 1),
-	text("Centr", 1),
+	text("Centro", 1),
 	text("Kaskad", 1),
 	text("Katedral", 1),
 	text("Kapel", 1),
