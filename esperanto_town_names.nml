@@ -840,6 +840,7 @@ town_names(adjective) {
 	text("Agrabla ", 1),
 	text("Sanktula ", 1),
 	text("Pina ", 1),
+	text("Tremola ", 1),
 	text("Sukcena ", 1),
 	text("Lieĝa ", 1),
 	text("Agla ", 1),
@@ -925,6 +926,7 @@ town_names(suffix) {
 	text(" meze de la mondo", 1),
 	text(" de la bonaĵoj", 1),
 	text(" laŭ la fundamento", 1),
+	text(" de la rozoj", 1),
 	}
 }
 
@@ -976,6 +978,8 @@ town_names(root) {
 	text("Ranĉ", 1),
 	text("Koloni", 1),
 	text("Misi", 1),
+	text("Plaĝ", 1),
+	text("Plataĵ", 1),
 	}
 }
 
@@ -993,15 +997,25 @@ town_names(root_for_suffix) {
 	text("Agat", 1),
 	text("Kvarc", 1),
 	text("Jasper", 1),
+	text("Karneli", 1),
 	text("Ĝarden", 1),
 	text("Kort", 1),
 	text("Kastel", 1),
 	text("Tur", 1),
-	text("Pomuj", 1),
-	text("Piruj", 1),
+	text("Agr", 1),
+	text("Miraĝ", 1),
+	text("Pom", 1),
+	text("Pir", 1),
+	text("Oranĝ", 1),
+	text("Pizang", 1),
+	text("", 1),
 	text("Flor", 1),
 	text("Roz", 1),
 	text("Hiacint", 1),
+	text("Kverk", 1),
+	text("Acer", 1),
+	text("Pin", 1),
+	text("Tremol", 1),
 	}
 }
 	
@@ -1040,15 +1054,17 @@ town_names(compound_root) {
 	text("Kverk", 1),
 	text("Acer", 1),
 	text("Pin", 1),
+	text("Tremol", 1),
 	text("Ĉeval", 1),
 	text("Kolomb", 1),
-	text("Pom", 1),
-	text("Pir", 1),
 	text("Flor", 1),
 	text("Lum", 1),
 	text("Ŝton", 1),
 	text("Abust", 1),
 	text("Dorn", 1),
+	text("Amik", 1),
+	text("Sun", 1),
+	text("Lun", 1),
 	}
 }
 
@@ -1062,6 +1078,13 @@ town_names(compound_suffix) {
 	text("tero", 1),
 	text("arbaro", 1),
 	text("valo", 1),
+	text("kampo", 1),
+	text("kamparo", 1),
+	text("domaro", 1),
+	text("ripozo", 1),
+	text("ejo", 1),
+	text("ujo", 1),
+	text("tono", 1),
 	}
 }
 
@@ -1160,19 +1183,22 @@ town_names(holy_places) {
 
 town_names(real_world) {
 	{
-	text("", 20),
+	text("", 25),
 	text("Nova ", 1),
-	text("Universitato de ", 1),
 	}
 	{
-	town_names(real_world_1, 1),
-	town_names(real_world_2, 1),
-	town_names(real_world_3, 1),
+	town_names(real_world_1, 13),
+	town_names(real_world_2, 13),
+	town_names(real_world_3, 13),
 	town_names(real_world_4, 1),
 	}
 }
 	
 town_names(original) {
+	{
+	text("", 30),
+	text("Nova ", 1),
+	}
 	{
 	town_names(adjective, 3),
 	town_names(names, 1),
@@ -1207,12 +1233,16 @@ town_names(suffix_towns) {
 	}
 }
 
-town_names(original_single) {
+town_names(single_or_suffix) {
 	{
 	town_names(root_for_suffix, 1),
 	}
 	{
 	text("o", 1),
+	}
+	{
+	text("", 7),
+	town_names(suffix, 1),
 	}
 }
 
@@ -1254,15 +1284,6 @@ town_names(university_towns) {
 	}
 }
 
-town_names(new_original) {
-	{
-	text("Nova ", 1),
-	}
-	{
-	town_names(original, 1),
-	}
-}
-
 town_names(saint_towns) {
 	{
 	town_names(saint_towns_1, 6),
@@ -1275,12 +1296,10 @@ town_names(master) {
 	{
 	town_names(real_world, 5),
 	town_names(original, 28),
-	town_names(new_original, 1),
 	town_names(compound, 22),
 	town_names(university_towns, 1),
-	town_names(suffix_towns, 15),
-	town_names(original_single, 12),
-	town_names(saint_towns, 8),
+	town_names(single_or_suffix, 17),
+	town_names(saint_towns, 6),
 	}
 }
 	
