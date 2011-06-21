@@ -989,6 +989,10 @@ town_names(root_for_suffix) {
 	text("Smerald", 1),
 	text("Kristal", 1),
 	text("Opal", 1),
+	text("Lapis Lazur", 1),
+	text("Agat", 1),
+	text("Kvarc", 1),
+	text("Jasper", 1),
 	text("Ĝarden", 1),
 	text("Kort", 1),
 	text("Kastel", 1),
@@ -996,7 +1000,8 @@ town_names(root_for_suffix) {
 	text("Pomuj", 1),
 	text("Piruj", 1),
 	text("Flor", 1),
-	text("", 1),
+	text("Roz", 1),
+	text("Hiacint", 1),
 	}
 }
 	
