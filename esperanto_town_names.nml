@@ -1008,7 +1008,6 @@ town_names(root_for_suffix) {
 	text("Pir", 1),
 	text("Oranĝ", 1),
 	text("Pizang", 1),
-	text("", 1),
 	text("Flor", 1),
 	text("Roz", 1),
 	text("Hiacint", 1),
