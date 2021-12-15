@@ -3,4 +3,6 @@ STR_GRF_NAME				:Esperantaj Urbaj Nomoj v{VERSIO}
 STR_GRF_DESCRIPTION			:Ĉi tiu newGRF havas Esperantajn nomojn de konataj urbetoj kaj urboj kaj ankaŭ havas hazarde kreitajn originalajn Esperanto-nomojn. Versio: {VERSIO} (2011-6-21) De Christopher kaj LaPingvino {COPYRIGHT} 2011 Licenco: {LICENCO}
 STR_GRF_URL				:{GIT_URL}
 
-STR_GAME_OPTIONS_TOWN_NAME_RANDOM_AB	:Esperanto
+STR_GAME_OPTIONS_TOWN_NAME_RANDOM_AB	:Esperanto (miksita)
+STR_GAME_OPTIONS_TOWN_NAME_RANDOM	:Esperanto (generita)
+STR_GAME_OPTIONS_TOWN_NAME_REAL		:Esperanto (Realaj urboj)

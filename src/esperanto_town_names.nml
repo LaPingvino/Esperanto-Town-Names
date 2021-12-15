@@ -1291,7 +1291,7 @@ town_names(saint_towns){
 }
 }
 
-town_names(master){
+town_names(mixed){
 styles: string(STR_GAME_OPTIONS_TOWN_NAME_RANDOM_AB);
 {
 	town_names(real_world, 5),
@@ -1300,6 +1300,24 @@ styles: string(STR_GAME_OPTIONS_TOWN_NAME_RANDOM_AB);
 	town_names(university_towns, 1),
 	town_names(single_or_suffix, 17),
 	town_names(saint_towns, 6),
+}
+}
+
+town_names(random){
+styles: string(STR_GAME_OPTIONS_TOWN_NAME_RANDOM);
+{
+	town_names(original, 28),
+	town_names(compound, 22),
+	town_names(university_towns, 1),
+	town_names(single_or_suffix, 17),
+	town_names(saint_towns, 6),
+}
+}
+
+town_names(real){
+styles: string(STR_GAME_OPTIONS_TOWN_NAME_REAL);
+{
+	town_names(real_world, 5),
 }
 }
 
