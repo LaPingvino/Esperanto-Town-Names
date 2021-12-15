@@ -1,6 +1,6 @@
 ##grflangid 0x01
 STR_GRF_NAME				:Esperanto Town Names v{VERSIO}
-STR_GRF_DESCRIPTION			:This newGRF has Esperantized names of well-known towns and cities and also has randomly generated original Esperanto names. Version: {VERSIO} (6/21/11) By Christopher and LaPingvino (c) 2011 Licence: {LICENCO}
+STR_GRF_DESCRIPTION			:This newGRF has Esperantized names of well-known towns and cities and also has randomly generated original Esperanto names. Version: {VERSIO} (6/21/11) By Christopher and LaPingvino {COPYRIGHT} 2011 Licence: {LICENCO}
 STR_GRF_URL				:{GIT_URL}
 
 STR_GAME_OPTIONS_TOWN_NAME_RANDOM_AB	:Esperanto

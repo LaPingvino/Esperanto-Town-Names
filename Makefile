@@ -31,8 +31,8 @@ $(builddir)/%.nfo: $(srcdir)/%.nml $(langdir)/english.lng $(langdir)/* | $(build
 	$(NMLC) $(NMLCFLAGS) --nfo $@ -l $(langdir) --custom-tags=$(srcdir)/custom_tags.txt --default-lang=english.lng $<
 
 # to lower case; remove build/; add name-version/
-$(builddir)/%.tar: $(builddir)/%.grf LICENSE.txt
-	$(TAR) --transform='s/\(.*\)/\L\1/' --transform='s|build/||' --transform='s|.*|$(grfname)-$(version)/&|' -cvf $@ $^
+$(builddir)/%.tar: $(builddir)/%.grf LICENSE.txt CHANGELOG.md README.md
+	$(TAR) --transform='s/\(.*\)/\L\1/' --transform='s|build/||' --transform='s/\.md/.txt/' --transform='s|.*|$(grfname)-$(version)/&|' -cvf $@ $^
 
 # just for checking the grf
 decode: $(builddir)/$(grfname).yagl
@@ -40,8 +40,9 @@ decode: $(builddir)/$(grfname).yagl
 $(builddir)/%.yagl: $(builddir)/%.grf
 	$(YAGL) --decode $< ./
 
-test:
-	$(OTTD) -x -g -c openttd.cfg
+# OpenTTD needs the tar file
+test: dist
+	$(OTTD) -x -g -c run/openttd.cfg
 
 clean:
 	$(RM) $(builddir)/*.grf $(builddir)/*.nfo $(builddir)/*.tar $(builddir)/*.yagl
