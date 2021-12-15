@@ -1,13 +1,13 @@
 grf {
-	grfid : "\37\55\05\01";
-	name : string(STR_GRF_NAME);
-	desc : string(STR_GRF_DESCRIPTION);
+	grfid: "\37\55\05\01";
+	name: string(STR_GRF_NAME);
+	desc: string(STR_GRF_DESCRIPTION);
 	version: 3;
 	min_compatible_version: 0;
 }
 
-town_names(real_world_1) {
-	{
+town_names(real_world_1){
+{
 	text("Amsterdamo", 1),
 	text("Roterdamo", 1),
 	text("Budapeŝto", 1),
@@ -262,11 +262,11 @@ town_names(real_world_1) {
 	text("Braziljo", 1),
 	text("Bremo", 1),
 	text("Breŝio", 1),
-	}
+}
 }
 
-town_names(real_world_2) {
-	{
+town_names(real_world_2){
+{
 	text("Bresto", 1),
 	text("Brisbano", 1),
 	text("Bristolo", 1),
@@ -520,11 +520,11 @@ town_names(real_world_2) {
 	text("Luksoro", 1),
 	text("Lusako", 1),
 	text("Lvivo", 1),
-	}
+}
 }
 
-town_names(real_world_3) {
-	{
+town_names(real_world_3){
+{
 	text("Macujamo", 1),
 	text("Macumoto", 1),
 	text("Madero", 1),
@@ -781,11 +781,11 @@ town_names(real_world_3) {
 	text("Vinterturo", 1),
 	text("Visbadeno", 1),
 	text("Vladivostoko", 1),
-	}
+}
 }
 
-town_names (real_world_4) {
-	{
+town_names(real_world_4){
+{
 	text("Volgogrado", 1),
 	text("Voroneĵo", 1),
 	text("Vraco", 1),
@@ -805,11 +805,11 @@ town_names (real_world_4) {
 	text("Zugo", 1),
 	text("Zuriko", 1),
 	text("Zvoleno", 1),
-	}
 }
-	
-town_names(adjective) {
-	{
+}
+
+town_names(adjective){
+{
 	text("Blanka ", 1),
 	text("Ruĝa ", 1),
 	text("Blua ", 1),
@@ -851,11 +851,11 @@ town_names(adjective) {
 	text("Flora ", 1),
 	text("Dorna ", 1),
 	text("Imperiestra ", 1),
-	}
+}
 }
 
-town_names(names) {
-	{
+town_names(names){
+{
 	text("Zamenhofa ", 1),
 	text("Alekĉja ", 1),
 	text("Aleksa ", 1),
@@ -909,11 +909,11 @@ town_names(names) {
 	text("Venka ", 1),
 	text("Vespera ", 1),
 	text("Vilhema ", 1),
-	}
+}
 }
 
-town_names(suffix) {
-	{
+town_names(suffix){
+{
 	text(" ĉe la maro", 1),
 	text(" sub la arboj", 1),
 	text(" sur la agroj", 1),
@@ -927,11 +927,11 @@ town_names(suffix) {
 	text(" de la bonaĵoj", 1),
 	text(" laŭ la fundamento", 1),
 	text(" de la rozoj", 1),
-	}
+}
 }
 
-town_names(root) {
-	{
+town_names(root){
+{
 	text("Urb", 1),
 	text("Urbet", 1),
 	text("Vilaĝ", 1),
@@ -964,10 +964,10 @@ town_names(root) {
 	text("Uzin", 1),
 	text("Muelej", 1),
 	text("Tombej", 1),
-	text("Forĝ",1),
-	text("Abatej",1),
+	text("Forĝ", 1),
+	text("Abatej", 1),
 	text("Fjord", 1),
-	text("Panoram",1),
+	text("Panoram", 1),
 	text("Ĝarden", 1),
 	text("Centr", 1),
 	text("Kaskad", 1),
@@ -980,11 +980,11 @@ town_names(root) {
 	text("Misi", 1),
 	text("Plaĝ", 1),
 	text("Plataĵ", 1),
-	}
+}
 }
 
-town_names(root_for_suffix) {
-	{
+town_names(root_for_suffix){
+{
 	text("Diamant", 1),
 	text("Perl", 1),
 	text("Ruben", 1),
@@ -1015,11 +1015,11 @@ town_names(root_for_suffix) {
 	text("Acer", 1),
 	text("Pin", 1),
 	text("Tremol", 1),
-	}
 }
-	
-town_names(compound_root) {
-	{
+}
+
+town_names(compound_root){
+{
 	text("River", 1),
 	text("Riveret", 1),
 	text("Kruc", 1),
@@ -1040,9 +1040,9 @@ town_names(compound_root) {
 	text("Kort", 1),
 	text("Strand", 1),
 	text("Muelej", 1),
-	text("Forĝ",1),
-	text("Abatej",1),
-	text("Panoram",1),
+	text("Forĝ", 1),
+	text("Abatej", 1),
+	text("Panoram", 1),
 	text("Ĝarden", 1),
 	text("Centro", 1),
 	text("Kaskad", 1),
@@ -1064,11 +1064,11 @@ town_names(compound_root) {
 	text("Amik", 1),
 	text("Sun", 1),
 	text("Lun", 1),
-	}
+}
 }
 
-town_names(compound_suffix) {
-	{
+town_names(compound_suffix){
+{
 	text("urbeto", 5),
 	text("vilaĝo", 5),
 	text("klifo", 1),
@@ -1084,11 +1084,11 @@ town_names(compound_suffix) {
 	text("ejo", 1),
 	text("ujo", 1),
 	text("tono", 1),
-	}
+}
 }
 
-town_names(saints) {
-	{
+town_names(saints){
+{
 	text("Aron", 1),
 	text("Abraham", 1),
 	text("Akaci", 1),
@@ -1166,139 +1166,139 @@ town_names(saints) {
 	text("Vilhem", 1),
 	text("Zeni", 1),
 	text("Zakari", 1),
-	}
+}
 }
 
-town_names(holy_places) {
-	{
+town_names(holy_places){
+{
 	text(" Kruco", 1),
 	text(" Preĝejo", 1),
-	text(" Abatejo",1),
+	text(" Abatejo", 1),
 	text(" Katedralo", 1),
 	text(" Kapelo", 1),
 	text(" Templo", 1),
-	}
+}
 }
 
-town_names(real_world) {
-	{
+town_names(real_world){
+{
 	text("", 25),
 	text("Nova ", 1),
-	}
-	{
+}
+{
 	town_names(real_world_1, 13),
 	town_names(real_world_2, 13),
 	town_names(real_world_3, 13),
 	town_names(real_world_4, 1),
-	}
 }
-	
-town_names(original) {
-	{
+}
+
+town_names(original){
+{
 	text("", 30),
 	text("Nova ", 1),
-	}
-	{
+}
+{
 	town_names(adjective, 3),
 	town_names(names, 1),
-	}
-	{
+}
+{
 	town_names(root, 1),
-	}
-	{
+}
+{
 	text("o", 1),
-	}
+}
 }
 
-town_names(compound) {
-	{
+town_names(compound){
+{
 	town_names(compound_root, 1),
 	town_names(root_for_suffix, 1),
-	}
-	{
+}
+{
 	town_names(compound_suffix, 1),
-	}
+}
 }
 
-town_names(suffix_towns) {
-	{
+town_names(suffix_towns){
+{
 	town_names(root_for_suffix, 1),
-	}
-	{
+}
+{
 	text("o", 1),
-	}
-	{
+}
+{
 	town_names(suffix, 1),
-	}
+}
 }
 
-town_names(single_or_suffix) {
-	{
+town_names(single_or_suffix){
+{
 	town_names(root_for_suffix, 1),
-	}
-	{
+}
+{
 	text("o", 1),
-	}
-	{
+}
+{
 	text("", 7),
 	town_names(suffix, 1),
-	}
+}
 }
 
-town_names(saint_towns_1) {
-	{
+town_names(saint_towns_1){
+{
 	text("Sankt-", 1),
-	}
-	{
+}
+{
 	town_names(saints, 1),
-	}
-	{
+}
+{
 	text("o", 1),
-	}
+}
 }
 
-town_names(saint_towns_2) {
-	{
+town_names(saint_towns_2){
+{
 	text("Sankt-", 1),
-	}
-	{
+}
+{
 	town_names(saints, 1),
-	}
-	{
+}
+{
 	text("a", 1),
-	}
-	{
+}
+{
 	town_names(holy_places, 1),
-	}
+}
 }
 
-town_names(university_towns) {
-	{
+town_names(university_towns){
+{
 	town_names(names, 1),
-	}
-	{
+}
+{
 	text("Universitato", 1),
 	text("Kolegio", 1),
 	text("Akademio", 1),
-	}
+}
 }
 
-town_names(saint_towns) {
-	{
+town_names(saint_towns){
+{
 	town_names(saint_towns_1, 6),
 	town_names(saint_towns_2, 10),
-	}
+}
 }
 
-town_names(master) {
-	styles:	string(STR_GAME_OPTIONS_TOWN_NAME_RANDOM_AB);
-	{
+town_names(master){
+styles: string(STR_GAME_OPTIONS_TOWN_NAME_RANDOM_AB);
+{
 	town_names(real_world, 5),
 	town_names(original, 28),
 	town_names(compound, 22),
 	town_names(university_towns, 1),
 	town_names(single_or_suffix, 17),
 	town_names(saint_towns, 6),
-	}
 }
-	
+}
+
