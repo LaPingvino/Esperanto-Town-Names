@@ -1,0 +1,7 @@
+{
+    "editor.tabSize": 8,
+    "files.exclude": {
+        "*.grf": true,
+        "*.tar": true
+    }
+}

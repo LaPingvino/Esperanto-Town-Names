@@ -1,0 +1,5 @@
+VERSIO          :1.2
+TTF_URL         :https://www.tt-forums.net/viewtopic.php?p=1250375
+GIT_URL         :https://github.com/LaPingvino/Esperanto-Town-Names
+LICENCO         :MIT
+AUXTOROJ        :Christopher, LaPingvino

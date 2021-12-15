@@ -3,21 +3,45 @@ version=1.2
 builddir=build
 srcdir=src
 langdir=$(srcdir)/lang
-nmlc=nmlc
-tar=tar
+NMLC=nmlc
+NMLCFLAGS=
+TAR=tar
+YAGL=yagl
+OTTD=openttd
 
-.PHONY : build clean
-build: $(builddir)/$(grfname).grf $(builddir)/$(grfname).tar
+.PHONY : all debug dist grf nfo decode test clean
+all: grf dist
+
+debug: NMLCFLAGS += -d
+debug: all
+
+dist: $(builddir)/$(grfname).tar
 
 $(builddir)/:
-	mkdir $@
+	mkdir -p $@
+
+grf: $(builddir)/$(grfname).grf
 
 $(builddir)/%.grf: $(srcdir)/%.nml $(langdir)/english.lng $(langdir)/* | $(builddir)/
-	$(nmlc) -o $@ -l $(langdir) --default-lang=english.lng $<
+	$(NMLC) $(NMLCFLAGS) --grf $@ -l $(langdir) --custom-tags=$(srcdir)/custom_tags.txt --default-lang=english.lng $<
+
+nfo: $(builddir)/$(grfname).nfo
+
+$(builddir)/%.nfo: $(srcdir)/%.nml $(langdir)/english.lng $(langdir)/* | $(builddir)/
+	$(NMLC) $(NMLCFLAGS) --nfo $@ -l $(langdir) --custom-tags=$(srcdir)/custom_tags.txt --default-lang=english.lng $<
 
 # to lower case; remove build/; add name-version/
 $(builddir)/%.tar: $(builddir)/%.grf LICENSE.txt
-	$(tar) --transform='s/\(.*\)/\L\1/' --transform='s|build/||' --transform='s|.*|$(grfname)-$(version)/&|' -cvf $@ $^
+	$(TAR) --transform='s/\(.*\)/\L\1/' --transform='s|build/||' --transform='s|.*|$(grfname)-$(version)/&|' -cvf $@ $^
+
+# just for checking the grf
+decode: $(builddir)/$(grfname).yagl
+
+$(builddir)/%.yagl: $(builddir)/%.grf
+	$(YAGL) --decode $< ./
+
+test:
+	$(OTTD) -x -g -c openttd.cfg
 
 clean:
-	$(RM) $(builddir)/$(grfname).grf $(builddir)/$(grfname).tar
+	$(RM) $(builddir)/*.grf $(builddir)/*.nfo $(builddir)/*.tar $(builddir)/*.yagl

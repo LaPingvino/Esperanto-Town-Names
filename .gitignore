@@ -1,2 +1,4 @@
+.vscode
 *.grf
-build/
+*.tar
+*.yagl

@@ -5,5 +5,5 @@ nmlc <nml file path/esperanto_town_names.nml>
 
 Or:
 ```
-make
+make grf
 ```
