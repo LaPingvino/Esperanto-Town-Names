@@ -1,5 +1,5 @@
 grfname=esperanto_town_names
-version=1.2
+version := $(shell grep VERSIO "src/custom_tags.txt" | cut -d':' -f2)
 builddir=build
 srcdir=src
 langdir=$(srcdir)/lang
@@ -15,23 +15,23 @@ all: grf dist
 debug: NMLCFLAGS += -d
 debug: all
 
-dist: $(builddir)/$(grfname).tar
-
 $(builddir)/:
 	mkdir -p $@
 
 grf: $(builddir)/$(grfname).grf
 
-$(builddir)/%.grf: $(srcdir)/%.nml $(langdir)/english.lng $(langdir)/* | $(builddir)/
+$(builddir)/%.grf: $(srcdir)/%.nml $(srcdir)/custom_tags.txt $(langdir)/english.lng $(langdir)/* | $(builddir)/
 	$(NMLC) $(NMLCFLAGS) --grf $@ -l $(langdir) --custom-tags=$(srcdir)/custom_tags.txt --default-lang=english.lng $<
 
 nfo: $(builddir)/$(grfname).nfo
 
-$(builddir)/%.nfo: $(srcdir)/%.nml $(langdir)/english.lng $(langdir)/* | $(builddir)/
+$(builddir)/%.nfo: $(srcdir)/%.nml $(srcdir)/custom_tags.txt $(langdir)/english.lng $(langdir)/* | $(builddir)/
 	$(NMLC) $(NMLCFLAGS) --nfo $@ -l $(langdir) --custom-tags=$(srcdir)/custom_tags.txt --default-lang=english.lng $<
 
+dist: $(builddir)/$(grfname)-$(version).tar
+
 # to lower case; remove build/; add name-version/
-$(builddir)/%.tar: $(builddir)/%.grf LICENSE.txt CHANGELOG.md README.md
+$(builddir)/%-$(version).tar: $(builddir)/%.grf LICENSE.txt CHANGELOG.md README.md
 	$(TAR) --transform='s/\(.*\)/\L\1/' --transform='s|build/||' --transform='s/\.md/.txt/' --transform='s|.*|$(grfname)-$(version)/&|' -cvf $@ $^
 
 # just for checking the grf
