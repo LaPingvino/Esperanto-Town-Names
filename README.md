@@ -18,9 +18,12 @@ Current variants:
 2 Where to find
 ---------------
 
-Forum:   https://www.TT-Forums.net/viewtopic.php?p=1250403
-GitHub:  https://GitHub.com/LaPingvino/Esperanto-Town-Names
-BaNaNaS: https://BaNaNaS.OpenTTD.org/package/newgrf/37550501
+- Forum:   https://www.TT-Forums.net/viewtopic.php?p=1250403
+- GitHub:  https://GitHub.com/LaPingvino/Esperanto-Town-Names
+- GitLab:  https://GitLab.com/basxto/Esperanto-Town-Names (automated mirror)
+- BaNaNaS: https://BaNaNaS.OpenTTD.org/package/newgrf/37550501
+
+See [changelog][] for release history.
 
 --------------
 3 Build newGRF
@@ -51,13 +54,13 @@ This will create the file `build/esperanto_town_names-*.tar` with the current ve
 Make sure to bump the version number in `src/custom_tags.txt` before publishing a new release.
 It might also be necessary to change the last line of `run/openttd.cfg` for `make test` to work with a different version.
 
-
+[changelog]: CHANGELOG.md
 [NML]: https://github.com/OpenTTD/NML
 [Make]: https://www.GNU.org/software/Make/
 [BaNaNaS]: https://BaNaNaS.OpenTTD.org/
 [Tar]: https://www.GNU.org/software/Tar/
 
-[Usage]: #usage
-[Where to find]: #where-to-find
-[Build newGRF]: #build-newgrf
-[Packaging for BaNaNaS]: #packaging-for-bananas
+[Usage]: #1-usage
+[Where to find]: #2-where-to-find
+[Build newGRF]: #3-build-newgrf
+[Packaging for BaNaNaS]: #4-packaging-for-bananas
