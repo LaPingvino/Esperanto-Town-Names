@@ -1,5 +1,7 @@
 VERSIO          :1.2.1
+ELDONDATO       :2011-06-21
 TTF_URL         :https://www.tt-forums.net/viewtopic.php?p=1250375
 GIT_URL         :https://github.com/LaPingvino/Esperanto-Town-Names
 LICENCO         :MIT
-AUXTOROJ        :Christopher, LaPingvino
+AUXTOROJ        :Christopher, LaPingvino & basxto
+KREADJARO       :2011, 2021
