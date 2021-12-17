@@ -1,5 +1,5 @@
 
-Next  Release
+1.2.1 Release
 -------------
 
 - Fix typos in real town names

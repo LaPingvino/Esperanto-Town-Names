@@ -1,19 +1,30 @@
+    .mmm,
+    ]P""`                               ][
+    ][   .dWW,]bWb  dWb  WdW[ dWW,]bWW,]WWW  dWb
+    ]WWW ]bm,`]P T[]bmd[ W`   `md[]P ][ ][  ]P T[
+    ][    ""W,][ ][]P""` W   .W"T[][ ][ ][  ][ ][
+    ]bmm,]mmd[]WmW`'Wmm[ W   ]bmW[][ ][ ]bm 'WmW`
+    '"""` """ ]["`  '""  "    ""'`'` '`  ""  '"`
+              ][
+
 1. [Usage][]
 2. [Where to find][]
 3. [Build newGRF][]
 4. [Packaging for BaNaNaS][]
 5. [Playtesting][]
 
+
 -------
 1 Usage
 -------
 
-Just activate the newGRF and select a naming variant when creating a new game.
+Enable this newGRF and select a naming variant when you create a new game.
 
 Current variants:
 - `mixed` (real town names and generated names mixed together)
 - `generated` (only generated pseudo names)
 - `real towns` (only Esperanto versions of real town names)
+
 
 ---------------
 2 Where to find
@@ -27,6 +38,7 @@ Current variants:
 See [changelog][] for release history.
 
 See [licence][] for the granted license.
+
 
 --------------
 3 Build newGRF
@@ -44,6 +56,7 @@ If nmlc iss not installed, you have to give the full path:
 
     $ make grf NMLC="<path/to/nmlc>"
 
+
 ---------------------------
 4 Packaging for [BaNaNaS][]
 ---------------------------
@@ -57,6 +70,7 @@ This will create the file `build/esperanto_town_names-*.tar`.
 
 Make sure to bump `VERSIO` in `src/custom_tags.txt`
 and `version` in the .nml for a new release.
+
 
 ---------------------------
 5 Playtesting

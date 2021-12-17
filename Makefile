@@ -54,6 +54,7 @@ $(builddir)/%.yagl: $(builddir)/%.grf
 
 # OpenTTD needs the tar file
 test: dist
+	sed "s|$(grfname)-.*/|$(grfname)-$(version)/|" -i run/openttd.cfg
 	$(OTTD) -x -g -c run/openttd.cfg
 
 clean:
