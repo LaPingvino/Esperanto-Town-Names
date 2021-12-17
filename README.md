@@ -37,7 +37,7 @@ Current variants:
 
 See [changelog][] for release history.
 
-See [licence][] for the granted license.
+See [license][] for the granted license.
 
 
 --------------
