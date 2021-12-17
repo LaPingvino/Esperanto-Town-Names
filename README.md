@@ -52,7 +52,7 @@ Or with GNU [Make][] installed just:
 
     $ make grf
 
-If nmlc iss not installed, you have to give the full path:
+If nmlc is not installed, you have to give the full path:
 
     $ make grf NMLC="<path/to/nmlc>"
 
