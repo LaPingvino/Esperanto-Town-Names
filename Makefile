@@ -6,10 +6,11 @@ langdir=$(srcdir)/lang
 NMLC=nmlc
 NMLCFLAGS=
 TAR=tar
+ZIP=zip
 YAGL=yagl
 OTTD=openttd
 
-.PHONY : all debug dist grf nfo decode test clean
+.PHONY : all debug grf nfo dist zip source decode test clean
 all: grf dist
 
 debug: NMLCFLAGS += -d
@@ -34,6 +35,17 @@ dist: $(builddir)/$(grfname)-$(version).tar
 $(builddir)/%-$(version).tar: $(builddir)/%.grf LICENSE.txt CHANGELOG.md README.md
 	$(TAR) --transform='s/\(.*\)/\L\1/' --transform='s|build/||' --transform='s/\.md/.txt/' --transform='s|.*|$(grfname)-$(version)/&|' -cvf $@ $^
 
+zip: $(builddir)/$(grfname)-$(version).tar.zip
+
+%.zip: %
+	$(ZIP) -9 $@ $<
+
+source: $(builddir)/$(grfname)-$(version)_source.tar.gz
+
+$(builddir)/$(grfname)-$(version)_source.tar.gz: $(builddir)/
+	git archive --format=tar.gz -9 trunko --prefix=$(grfname)-$(version)_source/ -o $@
+
+
 # just for checking the grf
 decode: $(builddir)/$(grfname).yagl
 
@@ -45,4 +57,4 @@ test: dist
 	$(OTTD) -x -g -c run/openttd.cfg
 
 clean:
-	$(RM) $(builddir)/*.grf $(builddir)/*.nfo $(builddir)/*.tar $(builddir)/*.yagl
+	$(RM) $(builddir)/*.grf $(builddir)/*.nfo $(builddir)/*.tar $(builddir)/*.yagl $(builddir)/*.zip $(builddir)/*.gz
