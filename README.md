@@ -2,12 +2,13 @@
 2. [Where to find][]
 3. [Build newGRF][]
 4. [Packaging for BaNaNaS][]
+5. [Playtesting][]
 
 -------
 1 Usage
 -------
 
-Just activate the newGRF and select one of the naming variants when creating a new game.
+Just activate the newGRF and select a naming variant when creating a new game.
 
 Current variants:
 - `mixed` (real town names and generated names mixed together)
@@ -20,16 +21,18 @@ Current variants:
 
 - Forum:   https://www.TT-Forums.net/viewtopic.php?p=1250403
 - GitHub:  https://GitHub.com/LaPingvino/Esperanto-Town-Names
-- GitLab:  https://GitLab.com/basxto/Esperanto-Town-Names (automated mirror)
+- GitLab:  https://GitLab.com/basxto/Esperanto-Town-Names (mirror)
 - BaNaNaS: https://BaNaNaS.OpenTTD.org/package/newgrf/37550501
 
 See [changelog][] for release history.
+
+See [licence][] for the granted license.
 
 --------------
 3 Build newGRF
 --------------
 
-With the the [NML][] compiler installed you can just type this into your terminal:
+With the the [NML][] compiler installed, just type in your terminal:
 
     $ nmlc -l src/lang --custom-tags=src/custom_tags.txt src/esperanto_town_names.nml
 
@@ -37,7 +40,7 @@ Or with GNU [Make][] installed just:
 
     $ make grf
 
-If it's not installed, you have to give the full path:
+If nmlc iss not installed, you have to give the full path:
 
     $ make grf NMLC="<path/to/nmlc>"
 
@@ -49,18 +52,39 @@ This needs GNU [Tar][] or something compatible:
 
     $ make dist
 
-This will create the file `build/esperanto_town_names-*.tar` with the current version number instead of `*`.
+This will create the file `build/esperanto_town_names-*.tar`.
+`*` is a placeholder for the current version.
 
-Make sure to bump the version number in `src/custom_tags.txt` before publishing a new release.
-It might also be necessary to change the last line of `run/openttd.cfg` for `make test` to work with a different version.
+Make sure to bump `VERSIO` in `src/custom_tags.txt`
+and `version` in the .nml for a new release.
 
-[changelog]: CHANGELOG.md
-[NML]: https://github.com/OpenTTD/NML
-[Make]: https://www.GNU.org/software/Make/
-[BaNaNaS]: https://BaNaNaS.OpenTTD.org/
-[Tar]: https://www.GNU.org/software/Tar/
+---------------------------
+5 Playtesting
+---------------------------
 
-[Usage]: #1-usage
-[Where to find]: #2-where-to-find
-[Build newGRF]: #3-build-newgrf
+As already mentioned, you can build a current version of this newGRF
+and launch it with OpenTTD through:
+
+    $ make test
+
+If such an instance is already running, you can:
+
+    $ make dist
+
+And then in the ingame console:
+
+    reload_newgrfs
+    restart
+
+[changelog]:             CHANGELOG.md
+[license]:               LICENSE.md
+[NML]:                   https://github.com/OpenTTD/NML
+[Make]:                  https://www.GNU.org/software/Make/
+[BaNaNaS]:               https://BaNaNaS.OpenTTD.org/
+[Tar]:                   https://www.GNU.org/software/Tar/
+
+[Usage]:                 #1-usage
+[Where to find]:         #2-where-to-find
+[Build newGRF]:          #3-build-newgrf
 [Packaging for BaNaNaS]: #4-packaging-for-bananas
+[Playtesting]:           #5-playtesting
