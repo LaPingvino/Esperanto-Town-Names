@@ -10,7 +10,7 @@ ZIP=zip
 YAGL=yagl
 OTTD=openttd
 
-.PHONY : all debug grf nfo dist zip source decode test clean
+.PHONY : all debug grf nfo dist zip source optimize decode test clean
 all: grf dist
 
 debug: NMLCFLAGS += -d
@@ -45,6 +45,8 @@ source: $(builddir)/$(grfname)-$(version)_source.tar.gz
 $(builddir)/$(grfname)-$(version)_source.tar.gz: $(builddir)/
 	git archive --format=tar.gz -9 trunko --prefix=$(grfname)-$(version)_source/ -o $@
 
+optimize: $(srcdir)/$(grfname).nml $(srcdir)/custom_tags.txt $(langdir)/english.lng $(langdir)/*
+	$(NMLC) $(NMLCFLAGS) --nml $(srcdir)/$(grfname).nml -l $(langdir) --custom-tags=$(srcdir)/custom_tags.txt --default-lang=english.lng $<
 
 # just for checking the grf
 decode: $(builddir)/$(grfname).yagl

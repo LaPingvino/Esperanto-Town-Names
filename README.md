@@ -72,9 +72,9 @@ Make sure to bump `VERSIO` in `src/custom_tags.txt`
 and `version` in the .nml for a new release.
 
 
----------------------------
+-------------
 5 Playtesting
----------------------------
+-------------
 
 As already mentioned, you can build a current version of this newGRF
 and launch it with OpenTTD through:
