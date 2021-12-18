@@ -7,11 +7,11 @@
     '"""` """ ]["`  '""  "    ""'`'` '`  ""  '"`
               ][
 
-1. [Usage][]
-2. [Where to find][]
-3. [Build newGRF][]
-4. [Packaging for BaNaNaS][]
-5. [Playtesting][]
+1. [Usage]
+2. [Where to find]
+3. [Build newGRF]
+4. [Packaging for BaNaNaS]
+5. [Playtesting]
 
 
 -------
@@ -35,20 +35,20 @@ Current variants:
 - GitLab:  https://GitLab.com/basxto/Esperanto-Town-Names (mirror)
 - BaNaNaS: https://BaNaNaS.OpenTTD.org/package/newgrf/37550501
 
-See [changelog][] for release history.
+See [changelog] for release history.
 
-See [license][] for the granted license.
+See [license] for the granted license.
 
 
 --------------
 3 Build newGRF
 --------------
 
-With the the [NML][] compiler installed, just type in your terminal:
+With the the [NML] compiler installed, just type in your terminal:
 
     $ nmlc -l src/lang --custom-tags=src/custom_tags.txt src/esperanto_town_names.nml
 
-Or with GNU [Make][] installed just:
+Or with GNU [Make] installed just:
 
     $ make grf
 
@@ -58,10 +58,10 @@ If nmlc is not installed, you have to give the full path:
 
 
 ---------------------------
-4 Packaging for [BaNaNaS][]
+4 Packaging for [BaNaNaS]
 ---------------------------
 
-This needs GNU [Tar][] or something compatible:
+This needs GNU [Tar] or something compatible:
 
     $ make dist
 
