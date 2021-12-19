@@ -879,9 +879,7 @@ town_names(adjective){
 town_names(root){
 {
 	text("Abatej", 1),
-	text("Agr", 1),
 	text("Akvofal", 1),
-	text("Centr", 1),
 	text("Citadel", 1),
 	text("Dekliv", 1),
 	text("Ebenaĵ", 1),
@@ -914,7 +912,6 @@ town_names(root){
 	text("River", 1),
 	text("Riveret", 1),
 	text("Strand", 1),
-	text("Templ", 1),
 	text("Tendum", 1),
 	text("Ter", 1),
 	text("Tombej", 1),
@@ -929,11 +926,18 @@ town_names(root){
 }
 }
 
+town_names(root_epenthesis){
+{
+	text("Agr", 1),
+	text("Centr", 1),
+	text("Templ", 1),
+}
+}
+
 town_names(root_for_suffix){
 {
 	text("Acer", 1),
 	text("Agat", 1),
-	text("Agr", 1),
 	text("Diamant", 1),
 	text("Flor", 1),
 	text("Ĝarden", 1),
@@ -964,6 +968,12 @@ town_names(root_for_suffix){
 }
 }
 
+town_names(root_for_suffix_epenthesis){
+{
+	text("Agr", 1),
+}
+}
+
 town_names(compound_root){
 {
 	text("Abatej", 1),
@@ -971,7 +981,6 @@ town_names(compound_root){
 	text("Acer", 1),
 	text("Akvofal", 1),
 	text("Amik", 1),
-	text("Centr", 1),
 	text("Ĉeval", 1),
 	text("Citadel", 1),
 	text("Dekliv", 1),
@@ -1013,51 +1022,62 @@ town_names(compound_root){
 }
 }
 
+town_names(compound_root_epenthesis){
+{
+	text("Centr", 1),
+}
+}
+
 town_names(suffix){
 {
-	text(" ĉe la maro", 1),
-	text(" sub la arboj", 1),
-	text(" sur la agroj", 1),
-	text(" de la tero", 1),
-	text(" de la dioj", 1),
 	text(" ĉe la lago", 1),
-	text(" inter la arbaroj", 1),
-	text(" sur la montoj", 1),
-	text(" sub la stelaro", 1),
-	text(" meze de la mondo", 1),
+	text(" ĉe la maro", 1),
 	text(" de la bonaĵoj", 1),
-	text(" laŭ la fundamento", 1),
+	text(" de la dioj", 1),
 	text(" de la rozoj", 1),
+	text(" de la tero", 1),
+	text(" inter la arbaroj", 1),
+	text(" laŭ la fundamento", 1),
+	text(" meze de la mondo", 1),
+	text(" sub la arboj", 1),
+	text(" sub la stelaro", 1),
+	text(" sur la agroj", 1),
+	text(" sur la montoj", 1),
 }
 }
 
 town_names(compound_suffix){
 {
-	text("urbeto", 5),
-	text("vilaĝo", 5),
-	text("klifo", 1),
-	text("fjordo", 1),
 	text("agro", 1),
-	text("tero", 1),
 	text("arbaro", 1),
-	text("valo", 1),
-	text("kampo", 1),
-	text("kamparo", 1),
-	text("domaro", 1),
-	text("ripozo", 1),
 	text("ejo", 1),
 	text("ujo", 1),
+	text("urbeto", 5),
+}
+}
+
+town_names(compound_suffix_epenthesis){
+{
+	text("domaro", 1),
+	text("fjordo", 1),
+	text("kamparo", 1),
+	text("kampo", 1),
+	text("klifo", 1),
+	text("ripozo", 1),
+	text("tero", 1),
 	text("tono", 1),
+	text("valo", 1),
+	text("vilaĝo", 5),
 }
 }
 
 town_names(holy_places){
 {
+	text("Abatejo", 1),
+	text("Kapelo", 1),
+	text("Katedralo", 1),
 	text("Kruco", 1),
 	text("Preĝejo", 1),
-	text("Abatejo", 1),
-	text("Katedralo", 1),
-	text("Kapelo", 1),
 	text("Templo", 1),
 }
 }
@@ -1086,10 +1106,45 @@ town_names(original){
 	text("a ", 1),
 }
 {
-	town_names(root, 1),
+	town_names(root, 44),
+	town_names(root_epenthesis, 3),
 }
 {
 	text("o", 1),
+}
+}
+
+town_names(compound_1){
+{
+	town_names(compound_root, 1),
+	town_names(root_for_suffix, 1),
+}
+{
+	town_names(compound_suffix, 1),
+	town_names(compound_suffix_epenthesis, 2),
+}
+}
+
+town_names(compound_2){
+{
+	town_names(compound_root_epenthesis, 1),
+	town_names(root_for_suffix_epenthesis, 1),
+}
+{
+	town_names(compound_suffix, 1),
+}
+}
+
+town_names(compound_3){
+{
+	town_names(compound_root_epenthesis, 1),
+	town_names(root_for_suffix_epenthesis, 1),
+}
+{
+	text("o", 1),
+}
+{
+	town_names(compound_suffix_epenthesis, 2),
 }
 }
 
@@ -1100,17 +1155,16 @@ town_names(compound){
 	text("Nov-", 1),
 }
 {
-	town_names(compound_root, 1),
-	town_names(root_for_suffix, 1),
-}
-{
-	town_names(compound_suffix, 1),
+	town_names(compound_1, 20),
+	town_names(compound_2, 1),
+	town_names(compound_3, 1),
 }
 }
 
 town_names(single_or_suffix){
 {
-	town_names(root_for_suffix, 1),
+	town_names(root_for_suffix, 28),
+	town_names(root_for_suffix_epenthesis, 1),
 }
 {
 	text("o", 1),
@@ -1156,9 +1210,9 @@ town_names(university_towns){
 	text("a ", 1),
 }
 {
-	text("Universitato", 1),
-	text("Kolegio", 1),
 	text("Akademio", 1),
+	text("Kolegio", 1),
+	text("Universitato", 1),
 }
 }
 
@@ -1166,18 +1220,6 @@ town_names(saint_towns){
 {
 	town_names(saint_towns_1, 6),
 	town_names(saint_towns_2, 10),
-}
-}
-
-town_names(mixed){
-styles: string(STR_GAME_OPTIONS_TOWN_NAME_RANDOM_AB);
-{
-	town_names(real_world, 5),
-	town_names(original, 28),
-	town_names(compound, 22),
-	town_names(university_towns, 1),
-	town_names(single_or_suffix, 17),
-	town_names(saint_towns, 3),
 }
 }
 
@@ -1196,11 +1238,18 @@ town_names(real){
 styles: string(STR_GAME_OPTIONS_TOWN_NAME_REAL);
 {
 	town_names(real_world_1, 127),
-	// those get composed otherwise
 	text("Nov-Delhio", 1),
 	text("Nov-Jorko", 1),
 	text("Sankta-Rafaelo", 1),
 	text("Sankta-Stefano", 1),
+}
+}
+
+town_names(mixed){
+styles: string(STR_GAME_OPTIONS_TOWN_NAME_RANDOM_AB);
+{
+	town_names(real_world, 5),
+	town_names(random, 71),
 }
 }
 

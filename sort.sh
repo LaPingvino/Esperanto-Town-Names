@@ -13,12 +13,18 @@ adj_start=$(grep -n "adjective){" "$file.nml" | awk -F: '{print $1}')
 saints_end=$((adj_start-4))
 root_start=$(grep -n "(root){" "$file.nml" | awk -F: '{print $1}')
 adj_end=$((root_start-4))
+rootep_start=$(grep -n "(root_epenthesis){" "$file.nml" | awk -F: '{print $1}')
+root_end=$((rootep_start-4))
 rootsuf_start=$(grep -n "root_for_suffix){" "$file.nml" | awk -F: '{print $1}')
-root_end=$((rootsuf_start-4))
+rootep_end=$((rootsuf_start-4))
+rootsufep_start=$(grep -n "root_for_suffix_epenthesis){" "$file.nml" | awk -F: '{print $1}')
+rootsuf_end=$((rootsufep_start-4))
 comproot_start=$(grep -n "compound_root){" "$file.nml" | awk -F: '{print $1}')
-rootsuf_end=$((comproot_start-4))
-comproot_end=$(grep -n "(suffix){" "$file.nml" | awk -F: '{print $1}')
-comproot_end=$((comproot_end - 4))
+rootsufep_end=$((comproot_start-4))
+comprootep_start=$(grep -n "compound_root_epenthesis){" "$file.nml" | awk -F: '{print $1}')
+comproot_end=$((comprootep_start-4))
+comprootep_end=$(grep -n "(suffix){" "$file.nml" | awk -F: '{print $1}')
+comprootep_end=$((comprootep_end - 4))
 
 
 eof=$(wc -l "$file.nml" | awk -F' ' '{print $1}')
@@ -39,14 +45,23 @@ sed -n "$((adj_start+2)),${adj_end}p" "$file.nml" | sort >> "$file.sorted.nml"
 sed -n "$((adj_end+1)),$((root_start+1))p" "$file.nml" >> "$file.sorted.nml"
 
 sed -n "$((root_start+2)),${root_end}p" "$file.nml" | sort >> "$file.sorted.nml"
-sed -n "$((root_end+1)),$((rootsuf_start+1))p" "$file.nml" >> "$file.sorted.nml"
+sed -n "$((root_end+1)),$((rootep_start+1))p" "$file.nml" >> "$file.sorted.nml"
+
+sed -n "$((rootep_start+2)),${rootep_end}p" "$file.nml" | sort >> "$file.sorted.nml"
+sed -n "$((rootep_end+1)),$((rootsuf_start+1))p" "$file.nml" >> "$file.sorted.nml"
 
 sed -n "$((rootsuf_start+2)),${rootsuf_end}p" "$file.nml" | sort >> "$file.sorted.nml"
-sed -n "$((rootsuf_end+1)),$((comproot_start+1))p" "$file.nml" >> "$file.sorted.nml"
+sed -n "$((rootsuf_end+1)),$((rootsufep_start+1))p" "$file.nml" >> "$file.sorted.nml"
+
+sed -n "$((rootsufep_start+2)),${rootsufep_end}p" "$file.nml" | sort >> "$file.sorted.nml"
+sed -n "$((rootsufep_end+1)),$((comproot_start+1))p" "$file.nml" >> "$file.sorted.nml"
 
 sed -n "$((comproot_start+2)),${comproot_end}p" "$file.nml" | sort >> "$file.sorted.nml"
+sed -n "$((comproot_end+1)),$((comprootep_start+1))p" "$file.nml" >> "$file.sorted.nml"
+
+sed -n "$((comprootep_start+2)),${comprootep_end}p" "$file.nml" | sort >> "$file.sorted.nml"
 #echo "===" >> "$file.sorted.nml"
 
-tail -n $((eof - (comproot_end) )) "$file.nml" >> "$file.sorted.nml"
+tail -n $((eof - (comprootep_end) )) "$file.nml" >> "$file.sorted.nml"
 
 mv "$file.sorted.nml" "$file.nml"
