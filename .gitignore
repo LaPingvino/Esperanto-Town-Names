@@ -1,0 +1,7 @@
+*.grf
+*.nfo
+*.tar
+*.gz
+*.zip
+*.yagl
+build/

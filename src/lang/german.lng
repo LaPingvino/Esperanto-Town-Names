@@ -1,0 +1,8 @@
+##grflangid 0x02
+STR_GRF_NAME				:Esperanto Städtenamen v{VERSIO}
+STR_GRF_DESCRIPTION			:Dieses newGRF esperantisiert die Namen von nahmhaften (Groß-)Städten und generiert weiter zufällige originäre Namen auf Esperanto.{}{}Version: {VERSIO} ({ELDONDATO}){}Von {AUXTOROJ} {COPYRIGHT}{NBSP}{KREADJARO}{}{}Lizenz: {LICENCO}
+STR_GRF_URL				:{TTF_URL}
+
+STR_GAME_OPTIONS_TOWN_NAME_RANDOM_AB	:Esperanto (gemischt)
+STR_GAME_OPTIONS_TOWN_NAME_RANDOM	:Esperanto (erzeugt)
+STR_GAME_OPTIONS_TOWN_NAME_REAL		:Esperanto (echte Städte)
