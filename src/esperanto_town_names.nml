@@ -692,59 +692,59 @@ town_names(real_world_1){
 
 town_names(names){
 {
-	text("Alekĉja ", 1),
-	text("Aleksa ", 1),
-	text("Aleksandra ", 1),
-	text("Amika ", 1),
-	text("Aminda ", 1),
-	text("Antona ", 1),
-	text("Brava ", 1),
-	text("Ĉiela ", 1),
-	text("Dezirinda ", 1),
-	text("Esperanta ", 1),
-	text("Fajra ", 1),
-	text("Fiera ", 1),
-	text("Gaja ", 1),
-	text("Georga ", 1),
-	text("Glorinda ", 1),
-	text("Hana ", 1),
-	text("Johana ", 1),
-	text("Joŭpa ", 1),
-	text("Jozefa ", 1),
-	text("Juvela ", 1),
-	text("Kandaĵa ", 1),
-	text("Karesinda ", 1),
-	text("Katida ", 1),
-	text("Kifta ", 1),
-	text("Korala ", 1),
-	text("Krista ", 1),
-	text("Kristofera ", 1),
-	text("Ludovika ", 1),
-	text("Luksa ", 1),
-	text("Maraĵa ", 1),
-	text("Merita ", 1),
-	text("Miela ", 1),
-	text("Miĥela ", 1),
-	text("Mikela ", 1),
-	text("Nikola ", 1),
-	text("Orabela ", 1),
-	text("Paŭla ", 1),
-	text("Petra ", 1),
-	text("Pipra ", 1),
-	text("Rajmonda", 1),
-	text("Rava ", 1),
-	text("Rozabela ", 1),
-	text("Rubena ", 1),
-	text("Safira ", 1),
-	text("Sprita ", 1),
-	text("Stelara ", 1),
-	text("Tondra ", 1),
-	text("Valdena ", 1),
-	text("Valora ", 1),
-	text("Venka ", 1),
-	text("Vespera ", 1),
-	text("Vilhema ", 1),
-	text("Zamenhofa ", 1),
+	text("Alekĉj", 1),
+	text("Aleks", 1),
+	text("Aleksandr", 1),
+	text("Amik", 1),
+	text("Amind", 1),
+	text("Anton", 1),
+	text("Brav", 1),
+	text("Ĉiel", 1),
+	text("Dezirind", 1),
+	text("Esperant", 1),
+	text("Fajr", 1),
+	text("Fier", 1),
+	text("Gaj", 1),
+	text("Georg", 1),
+	text("Glorind", 1),
+	text("Han", 1),
+	text("Johan", 1),
+	text("Joŭp", 1),
+	text("Jozef", 1),
+	text("Juvel", 1),
+	text("Kandaĵ", 1),
+	text("Karesind", 1),
+	text("Katid", 1),
+	text("Kift", 1),
+	text("Koral", 1),
+	text("Krist", 1),
+	text("Kristofer", 1),
+	text("Ludovik", 1),
+	text("Luks", 1),
+	text("Maraĵ", 1),
+	text("Merit", 1),
+	text("Miel", 1),
+	text("Miĥel", 1),
+	text("Mikel", 1),
+	text("Nikol", 1),
+	text("Orabel", 1),
+	text("Paŭl", 1),
+	text("Petr", 1),
+	text("Pipr", 1),
+	text("Rajmond", 1),
+	text("Rav", 1),
+	text("Rozabel", 1),
+	text("Ruben", 1),
+	text("Safir", 1),
+	text("Sprit", 1),
+	text("Stelar", 1),
+	text("Tondr", 1),
+	text("Valden", 1),
+	text("Valor", 1),
+	text("Venk", 1),
+	text("Vesper", 1),
+	text("Vilhem", 1),
+	text("Zamenhof", 1),
 }
 }
 
@@ -832,47 +832,47 @@ town_names(saints){
 
 town_names(adjective){
 {
-	text("Acera ", 1),
-	text("Agla ", 1),
-	text("Agrabla ", 1),
-	text("Antikva ", 1),
-	text("Arĝenta ", 1),
-	text("Argila ", 1),
-	text("Blanka ", 1),
-	text("Blua ", 1),
-	text("Brila ", 1),
-	text("Ĉevala ", 1),
-	text("Dorna ", 1),
-	text("Fekunda ", 1),
-	text("Flava ", 1),
-	text("Flora ", 1),
-	text("Fortresa ", 1),
-	text("Granda ", 1),
-	text("Hela ", 1),
-	text("Imperia ", 1),
-	text("Imperiestra ", 1),
-	text("Kaŝita ", 1),
-	text("Kolomba ", 1),
-	text("Kristala ", 1),
-	text("Kverka ", 1),
-	text("Lieĝa ", 1),
-	text("Luna ", 1),
-	text("Mara ", 1),
-	text("Nigra ", 1),
-	text("Oceana ", 1),
-	text("Ora ", 1),
-	text("Pina ", 1),
-	text("Reĝa ", 1),
-	text("Reĝina ", 1),
-	text("Ruĝa ", 1),
-	text("Sankta ", 1),
-	text("Sanktula ", 1),
-	text("Ŝtona ", 1),
-	text("Sukcena ", 1),
-	text("Sukera ", 1),
-	text("Suna ", 1),
-	text("Tremola ", 1),
-	text("Verda ", 1),
+	text("Acer", 1),
+	text("Agl", 1),
+	text("Agrabl", 1),
+	text("Antikv", 1),
+	text("Arĝent", 1),
+	text("Argil", 1),
+	text("Blank", 1),
+	text("Blu", 1),
+	text("Bril", 1),
+	text("Ĉeval", 1),
+	text("Dorn", 1),
+	text("Fekund", 1),
+	text("Flav", 1),
+	text("Flor", 1),
+	text("Fortres", 1),
+	text("Grand", 1),
+	text("Hel", 1),
+	text("Imperi", 1),
+	text("Imperiestr", 1),
+	text("Kaŝit", 1),
+	text("Kolomb", 1),
+	text("Kristal", 1),
+	text("Kverk", 1),
+	text("Lieĝ", 1),
+	text("Lun", 1),
+	text("Mar", 1),
+	text("Nigr", 1),
+	text("Ocean", 1),
+	text("Or", 1),
+	text("Pin", 1),
+	text("Reĝ", 1),
+	text("Reĝin", 1),
+	text("Ruĝ", 1),
+	text("Sankt", 1),
+	text("Sanktul", 1),
+	text("Ŝton", 1),
+	text("Sukcen", 1),
+	text("Suker", 1),
+	text("Sun", 1),
+	text("Tremol", 1),
+	text("Verd", 1),
 }
 }
 
@@ -946,7 +946,7 @@ town_names(root_for_suffix){
 	text("Kristal", 1),
 	text("Kvarc", 1),
 	text("Kverk", 1),
-	text("Lapis Lazur", 1),
+	text("Lazurit", 1),
 	text("Miraĝ", 1),
 	text("Opal", 1),
 	text("Oranĝ", 1),
@@ -1053,12 +1053,12 @@ town_names(compound_suffix){
 
 town_names(holy_places){
 {
-	text(" Kruco", 1),
-	text(" Preĝejo", 1),
-	text(" Abatejo", 1),
-	text(" Katedralo", 1),
-	text(" Kapelo", 1),
-	text(" Templo", 1),
+	text("Kruco", 1),
+	text("Preĝejo", 1),
+	text("Abatejo", 1),
+	text("Katedralo", 1),
+	text("Kapelo", 1),
+	text("Templo", 1),
 }
 }
 
@@ -1083,6 +1083,9 @@ town_names(original){
 	town_names(names, 1),
 }
 {
+	text("a ", 1),
+}
+{
 	town_names(root, 1),
 }
 {
@@ -1102,18 +1105,6 @@ town_names(compound){
 }
 {
 	town_names(compound_suffix, 1),
-}
-}
-
-town_names(suffix_towns){
-{
-	town_names(root_for_suffix, 1),
-}
-{
-	text("o", 1),
-}
-{
-	town_names(suffix, 1),
 }
 }
 
@@ -1150,7 +1141,7 @@ town_names(saint_towns_2){
 	town_names(saints, 1),
 }
 {
-	text("a", 1),
+	text("a ", 1),
 }
 {
 	town_names(holy_places, 1),
@@ -1160,6 +1151,9 @@ town_names(saint_towns_2){
 town_names(university_towns){
 {
 	town_names(names, 1),
+}
+{
+	text("a ", 1),
 }
 {
 	text("Universitato", 1),
