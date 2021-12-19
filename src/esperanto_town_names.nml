@@ -555,8 +555,6 @@ town_names(real_world_1){
 	text("Sankta-Domingo", 1),
 	text("Sankta-Galo", 1),
 	text("Sankta-Kruco-de-la-Norto", 1),
-	text("Sankta-Rafaelo", 1),
-	text("Sankta-Stefano", 1),
 	text("Sankt-Peterburgo", 2),
 	text("Sankt-Polteno", 1),
 	text("San-Paŭlo", 1),
@@ -810,7 +808,7 @@ town_names(saints){
 	text("Paŭl", 1),
 	text("Peter", 1),
 	text("Pi", 1),
-	text("Rafel", 1),
+	text("Rafael", 1),
 	text("Rit", 1),
 	text("Rosali", 1),
 	text("Saloni", 1),
@@ -1066,8 +1064,9 @@ town_names(holy_places){
 
 town_names(real_world){
 {
-	text("", 25),
-	text("Nova ", 1),
+	text("", 100),
+	text("Nova ", 3),
+	text("Nov-", 1),
 }
 {
 	town_names(real_world_1, 1),
@@ -1092,6 +1091,11 @@ town_names(original){
 }
 
 town_names(compound){
+{
+	text("", 120),
+	text("Nova ", 3),
+	text("Nov-", 1),
+}
 {
 	town_names(compound_root, 1),
 	town_names(root_for_suffix, 1),
@@ -1128,7 +1132,7 @@ town_names(single_or_suffix){
 
 town_names(saint_towns_1){
 {
-	text("Sankt-", 1),
+	text("Sankta-", 1),
 }
 {
 	town_names(saints, 1),
@@ -1140,7 +1144,7 @@ town_names(saint_towns_1){
 
 town_names(saint_towns_2){
 {
-	text("Sankt-", 1),
+	text("Sankta-", 1),
 }
 {
 	town_names(saints, 1),
@@ -1179,7 +1183,7 @@ styles: string(STR_GAME_OPTIONS_TOWN_NAME_RANDOM_AB);
 	town_names(compound, 22),
 	town_names(university_towns, 1),
 	town_names(single_or_suffix, 17),
-	town_names(saint_towns, 6),
+	town_names(saint_towns, 3),
 }
 }
 
@@ -1190,7 +1194,7 @@ styles: string(STR_GAME_OPTIONS_TOWN_NAME_RANDOM);
 	town_names(compound, 22),
 	town_names(university_towns, 1),
 	town_names(single_or_suffix, 17),
-	town_names(saint_towns, 6),
+	town_names(saint_towns, 3),
 }
 }
 
@@ -1198,8 +1202,11 @@ town_names(real){
 styles: string(STR_GAME_OPTIONS_TOWN_NAME_REAL);
 {
 	town_names(real_world_1, 127),
+	// those get composed otherwise
 	text("Nov-Delhio", 1),
 	text("Nov-Jorko", 1),
+	text("Sankta-Rafaelo", 1),
+	text("Sankta-Stefano", 1),
 }
 }
 
