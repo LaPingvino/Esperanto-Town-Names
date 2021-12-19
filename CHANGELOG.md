@@ -6,6 +6,7 @@
 - Fix typos in real town names
 - Add changelog and readme
 - Allow to choose bewteen generated and real town names
+- Use epenthesis for some compound words (Agrfjordo=>Agrofjordo)
 
 
 -------------

@@ -1016,7 +1016,6 @@ town_names(compound_root){
 	text("Ŝton", 1),
 	text("Strand", 1),
 	text("Sun", 1),
-	text("Templ", 1),
 	text("Tendum", 1),
 	text("Tremol", 1),
 }
@@ -1025,6 +1024,7 @@ town_names(compound_root){
 town_names(compound_root_epenthesis){
 {
 	text("Centr", 1),
+	text("Templ", 1),
 }
 }
 
